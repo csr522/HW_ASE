@@ -101,7 +101,7 @@ public class flightCheckIn {
 					if (baggage > baggageWeight) {
 						int extraCharge = calcExtraCharge(baggage, flight.getExtraBaggageCharge(),
 							flight.getMaxBaagageWeight());
-						System.out.println("Your Baggage is extra weight. You have to pay Â£" + extraCharge);
+						System.out.println("Your Baggage is extra weight. You have to pay £" + extraCharge);
 						totalExcessBaggageFeeCollected += extraCharge;
 					}
 
@@ -180,7 +180,7 @@ public class flightCheckIn {
 		flight flightObj = new flight();
 		String[] details = flightDetails.split(",");
 		flightObj.setFlightCode(details[0]);
-	//	System.out.println(flightObj.getFlightCode());
+		System.out.println(flightObj.getFlightCode());
 		flightObj.setDAirport(details[1]);
 		flightObj.setCarrier(details[2]);
 		flightObj.setMaxPassengersCount(Integer.parseInt(details[3]));
